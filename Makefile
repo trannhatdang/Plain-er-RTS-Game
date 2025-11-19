@@ -2,7 +2,7 @@ SRC:= ./src
 OBJ:= ./obj
 INCLUDE:= ./include
 CFLAGS:= -Wall -I ./include -L ./src -lraylib -lopengl32 -lgdi32 -lwinmm
-OBJECTS:= $(OBJ)/unit.o $(OBJ)/main.o
+OBJECTS:= $(OBJ)/screen.o $(OBJ)/unit.o $(OBJ)/main.o
 OUTPUT:= game.exe
 
 $(OUTPUT): $(OBJECTS)

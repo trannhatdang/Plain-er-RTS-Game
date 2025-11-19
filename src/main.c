@@ -1,10 +1,8 @@
-#include "unit.h"
+#include "main.h"
 
 int main()
 {
-	const int screenWidth = 1280;
-	const int screenHeight = 720;
-	InitWindow(screenWidth, screenHeight, "game");
+	InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "game");
 
 	SetTargetFPS(60);
 	while(!WindowShouldClose())
@@ -31,7 +29,7 @@ int main()
 
 		EndDrawing();
 	}
-
-
+	lmao();
+	Transition();
 	CloseWindow();
 }
