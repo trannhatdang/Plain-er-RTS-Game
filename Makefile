@@ -5,8 +5,8 @@ CFLAGS:= -Wall -I ./include -L ./src -lraylib -lopengl32 -lgdi32 -lwinmm
 OBJECTS:= $(OBJ)/unit.o $(OBJ)/main.o
 OUTPUT:= game.exe
 
-game: $(OBJECTS)
-	$(CC) $^ $(CFLAGS) -o $(OUTPUT)
+$(OUTPUT): $(OBJECTS)
+	$(CC) $^ $(CFLAGS) -o $@
 
 $(OBJECTS): $(OBJ)/%.o: $(SRC)/%.c
 	$(CC) -c $^ $(CFLAGS) -o $@
