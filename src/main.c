@@ -1,4 +1,4 @@
-#include "gameplay/unit.h"
+#include "unit.h"
 
 int main()
 {
@@ -11,11 +11,6 @@ int main()
 	Texture2D texture = LoadTextureFromImage(image);
 
 	SetTargetFPS(60);
-
-
-
-
-
 	while(!WindowShouldClose())
 	{
 		BeginDrawing();

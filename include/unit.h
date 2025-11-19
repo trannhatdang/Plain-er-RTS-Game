@@ -1,6 +1,7 @@
 #include "raylib.h"
-#include <cstddef>
-
+#include "raymath.h"
+#include <stddef.h>
+#include <stdlib.h>
 
 enum UnitType
 {

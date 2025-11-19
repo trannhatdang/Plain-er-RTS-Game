@@ -44,7 +44,7 @@ void UpdateUnits()
 {
 	for(int i = 0; i < numUnits; ++i)
 	{
-		Vector2 dist = Vector2DotProduct(units[i]->velocity, units[i]->speed);
+		Vector2 dist = Vector2Scale(units[i]->velocity, units[i]->speed);
 		units[i]->position = Vector2Add(units[i]->position, dist);
 	}
 }
