@@ -29,6 +29,5 @@ int main()
 
 		EndDrawing();
 	}
-	Transition();
 	CloseWindow();
 }
