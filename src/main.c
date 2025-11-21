@@ -2,7 +2,7 @@
 
 int main()
 {
-	InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "game");
+	InitWindow(GetResolution().x, GetResolution().y, "game");
 
 	SetTargetFPS(60);
 	while(!WindowShouldClose())
@@ -29,7 +29,6 @@ int main()
 
 		EndDrawing();
 	}
-	lmao();
 	Transition();
 	CloseWindow();
 }

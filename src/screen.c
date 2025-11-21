@@ -16,12 +16,11 @@ void Transition()
 	col.a = 0;
 	for(int i = 0; i < steps; ++i)
 	{
-		DrawRectangle(0,0, SCREEN_WIDTH, SCREEN_HEIGHT, col);
+		DrawRectangle(0,0, GetResolution().x, GetResolution().y, col);
 		col.a += 100/steps;
 		printf("%d", col.a);
 		WaitTime(time/ steps);
 	}
-	lmao();
 	EndBlendMode();
 }
 

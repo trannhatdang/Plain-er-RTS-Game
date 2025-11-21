@@ -14,7 +14,6 @@ Unit* SpawnUnit(enum UnitType type)
 	units[numUnits] = newUnit;
 	numUnits++; //not thread safe? lmao
 		    //
-		    //
 
 	return units[numUnits-1];
 }

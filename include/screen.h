@@ -1,4 +1,6 @@
-#include "main.h"
+#include "game_config.h"
+#include "raylib.h"
+#include "stdio.h"
 
 #ifndef SCREEN_H_
 #define SCREEN_H_
