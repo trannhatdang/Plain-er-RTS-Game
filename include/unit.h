@@ -10,14 +10,17 @@ enum UnitType
 	BUILDING
 };
 
-typedef struct _unit Unit;
+typedef struct Unit Unit;
 
+bool Unit_CheckUnit();
 Unit* Unit_SpawnUnit(enum UnitType type, Vector2 position, Vector2 velocity, Vector2 acceleration, int mass);
-void Unit_FreeUnits();
 Unit* Unit_FindCloseUnit(Vector2 pos);
-void Unit_UpdateUnits();
 
 Vector2 Unit_GetUnitPos(Unit* unit);
 Vector2 Unit_GetUnitVel(Unit* unit);
 Vector2 Unit_GetUnitAcc(Unit* unit);
 void Unit_ApplyForce(Unit* unit, Vector2 force);
+
+void InitializeUnits();
+void FreeUnits();
+void UpdateUnits();

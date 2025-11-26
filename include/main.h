@@ -7,5 +7,6 @@
 
 #include "unit.h"
 #include "screen.h"
+#include "input.h"
 
 #endif

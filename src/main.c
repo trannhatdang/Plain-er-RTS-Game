@@ -6,16 +6,20 @@ int main()
 	InitWindow(res.x, res.y, "game");
 
 	SetTargetFPS(60);
+	InitializeInputModule();
+	InitializeUnits();
+
 	while(!WindowShouldClose())
 	{
 		BeginDrawing();
 		ClearBackground(RAYWHITE);
 		DrawScreen();
-		Unit_UpdateUnits();
+		UpdateUnits();
 
 		EndDrawing();
 	}
 
-	Unit_FreeUnits();
+	FreeInputModule();
+	FreeUnits();
 	CloseWindow();
 }

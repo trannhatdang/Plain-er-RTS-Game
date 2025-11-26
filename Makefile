@@ -7,5 +7,5 @@ INCLUDES:= $(subst $(SRC), $(INC), $(patsubst %.c, %.h, $(SOURCES)))
 OBJECTS:= $(subst $(SRC), $(OBJ), $(patsubst %.c, %.o, $(SOURCES)))
 OUTPUT:= game.exe
 
-game.exe: $(SOURCES) $(INCLUDES)
+$(OUTPUT): $(SOURCES) $(INCLUDES)
 	$(CC) $(SOURCES) $(CFLAGS) -o $@

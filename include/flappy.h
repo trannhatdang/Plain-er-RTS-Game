@@ -1,4 +1,5 @@
 #include "unit.h"
+#include "input.h"
 
 #ifndef FLAPPY_H_
 #define FLAPPY_H_
