@@ -1,6 +1,8 @@
 #include "game_config.h"
 #include "raylib.h"
 #include "stdio.h"
+#include "unit.h"
+#include "flappy.h"
 
 #ifndef SCREEN_H_
 #define SCREEN_H_

@@ -11,8 +11,11 @@ int main()
 		BeginDrawing();
 		ClearBackground(RAYWHITE);
 		DrawScreen();
+		Unit_UpdateUnits();
 
 		EndDrawing();
 	}
+
+	Unit_FreeUnits();
 	CloseWindow();
 }

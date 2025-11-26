@@ -2,7 +2,6 @@
 
 static Screen curr_screen = MENU;
 static Screen next_screen = MENU;
-static bool isInTransition = false;
 
 void ChangeScreen(Screen screen, bool transition)
 {
@@ -77,5 +76,18 @@ void DrawTransition()
 
 void DrawFlappy()
 {
+	Unit* bird = GetBird();
+	Vector2 pos = Unit_GetUnitPos(bird);
+	DrawRectangle(pos.x, pos.y, 50, 50, BLACK);
 
+	Unit** pipes = GetPipes();
+	int n = GetPipesNum();
+	for(int i = 0; i < n; ++i)
+	{
+		Unit* pipe = pipes[i];
+		Vector2 pipe_pos = Unit_GetUnitPos(pipe);
+		DrawRectangle(pipe_pos.x, pipe_pos.y, 50, 50, GRAY);
+	}
+
+	UpdateFlappyScreen();
 }
