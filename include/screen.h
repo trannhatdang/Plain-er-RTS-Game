@@ -8,11 +8,15 @@
 typedef enum {
 	MENU,
 	LOADING,
-	FLAPPY
+	FLAPPY,
+	TRANSITION
 } Screen;
 
-void ChangeScreen(Screen screen); //CHanges screen
-void Transition();
+void ChangeScreen(Screen screen, bool transition); //Changes screen
+void DrawScreen();
+void DrawMenu();
+void DrawFlappy();
+void DrawTransition();
 
 #endif
 

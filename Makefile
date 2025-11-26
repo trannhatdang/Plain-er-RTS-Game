@@ -9,6 +9,3 @@ OUTPUT:= game.exe
 
 game.exe: $(SOURCES) $(INCLUDES)
 	$(CC) $(SOURCES) $(CFLAGS) -o $@
-
-clean: 
-	rm -f *.c *.o all
